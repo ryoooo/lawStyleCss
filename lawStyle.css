@@ -1,0 +1,98 @@
+ol {
+  counter-reset: number 0;
+}
+
+li {
+  list-style: none;
+  position: relative;
+}
+
+li:before {
+  counter-increment: number 1;
+  content: '第'counter(number) ' ';
+}
+
+ol li ol {
+  /*  plus li ol  */
+  counter-reset: number 0;
+}
+
+ol li ol li {
+  /*  plus ol li  */
+  list-style: none;
+  position: relative;
+}
+
+ol li ol li:before {
+  /*  plus ol li  */
+  counter-increment: number 1;
+  content: ''counter(number) ' ';
+}
+
+ol li ol li ol {
+  /*  plus li ol  */
+  counter-reset: number 0;
+}
+
+ol li ol li ol li {
+  /*  plus ol li  */
+  list-style: none;
+  position: relative;
+}
+
+ol li ol li ol li:before {
+  /*  plus ol li  */
+  counter-increment: number 1;
+  content: '('counter(number) ') ';
+}
+
+ol li ol li ol li ol {
+  /*  plus li ol  */
+  counter-reset: number 0;
+}
+
+ol li ol li ol li ol li {
+  /*  plus ol li  */
+  list-style: none;
+  position: relative;
+}
+
+ol li ol li ol li ol li:before {
+  /*  plus ol li  */
+  counter-increment: number 1;
+  content: ''counter(number, katakana) ' ';
+}
+
+ol li ol li ol li ol li ol {
+  /*  plus li ol  */
+  counter-reset: number 0;
+}
+
+ol li ol li ol li ol li ol li {
+  /*  plus ol li  */
+  list-style: none;
+  position: relative;
+}
+
+ol li ol li ol li ol li ol li:before {
+  /*  plus ol li  */
+  counter-increment: number 1;
+  content: '('counter(number, katakana) ') ';
+}
+
+ol li ol li ol li ol li ol li ol {
+  /*  plus li ol  */
+  counter-reset: number 0;
+}
+
+ol li ol li ol li ol li ol li ol li {
+  /*  plus ol li  */
+  list-style: none;
+  position: relative;
+}
+
+ol li ol li ol li ol li ol li ol li:before {
+  /*  plus ol li  */
+  counter-increment: number 1;
+  content: counter(number) ' ';
+}
